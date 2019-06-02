@@ -1,0 +1,17 @@
+<table mdbTable>
+  <thead class="grey lighten-1 black-text">
+    <tr>
+      <th *ngFor="let head of headUrls" scope="col">{{head}} </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr mdbTableCol *ngFor="let url of urls">
+      <th scope="row">{{url.id}}</th>
+      <td>{{url.url}}</td>
+      <td>{{url.sanitize_url}}</td>
+      <td>{{url.short_url}}</td>
+      <td>{{url.final_url}}</td>
+      <td>{{url.visits}}</td>
+    </tr>
+  </tbody>
+</table>
